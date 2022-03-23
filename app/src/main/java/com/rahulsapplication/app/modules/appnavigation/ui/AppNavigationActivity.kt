@@ -10,7 +10,6 @@ import com.rahulsapplication.app.modules.incomingcallnotification.ui.IncomingCal
 import com.rahulsapplication.app.modules.incomingcallnotification3.ui.IncomingCallNotification3Activity
 import com.rahulsapplication.app.modules.incomingcallnotificationmorethanoneprofile.ui.IncomingCallNotificationMoreThanOneProfileActivity
 import com.rahulsapplication.app.modules.incominggroupcallnotification.ui.IncomingGroupCallNotificationActivity
-import com.rahulsapplication.app.modules.telegramxmainscreen.ui.TelegramXMainScreenActivity
 import kotlin.String
 import kotlin.Unit
 
@@ -24,20 +23,16 @@ public class AppNavigationActivity :
   }
 
   public override fun setUpClicks(): Unit {
-    binding.linear05IncomingGroupCallNotification.setOnClickListener {
-      val destIntent = IncomingGroupCallNotificationActivity.getIntent(this, null)
-      startActivity(destIntent)
-    }
     binding.linear06IncomingCallInTheMiddleOfAnotherCall.setOnClickListener {
       val destIntent = IncomingCallInTheMiddleOfAnotherCallActivity.getIntent(this, null)
       startActivity(destIntent)
     }
-    binding.linear03IncomingCallNotification.setOnClickListener {
-      val destIntent = IncomingCallNotification3Activity.getIntent(this, null)
+    binding.linear05IncomingGroupCallNotification.setOnClickListener {
+      val destIntent = IncomingGroupCallNotificationActivity.getIntent(this, null)
       startActivity(destIntent)
     }
-    binding.linear01TelegramXMainScreen.setOnClickListener {
-      val destIntent = TelegramXMainScreenActivity.getIntent(this, null)
+    binding.linear03IncomingCallNotification.setOnClickListener {
+      val destIntent = IncomingCallNotification3Activity.getIntent(this, null)
       startActivity(destIntent)
     }
     binding.linear04IncomingCallNotificationMoreThanOneProfile.setOnClickListener {
